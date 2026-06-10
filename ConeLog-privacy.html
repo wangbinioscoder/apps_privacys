@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — ConeLog</title>
+<style>
+  :root {
+    --orange: #FF6B35;
+    --orange-dark: #D24B1E;
+    --navy: #1B2845;
+    --text: #1d1d1f;
+    --muted: #6e6e73;
+    --bg: #fbf8f5;
+    --card: #ffffff;
+    --line: rgba(0,0,0,0.08);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  header {
+    background: linear-gradient(135deg, var(--orange) 0%, var(--orange-dark) 60%, var(--navy) 100%);
+    color: #fff;
+    padding: 60px 24px 50px;
+    text-align: center;
+  }
+  header h1 { margin: 0; font-size: 38px; letter-spacing: -0.5px; }
+  header p  { margin: 10px 0 0; opacity: 0.9; }
+  main {
+    max-width: 760px;
+    margin: -28px auto 0;
+    padding: 40px 28px 80px;
+    background: var(--card);
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+  }
+  h2 {
+    margin-top: 38px;
+    font-size: 22px;
+    color: var(--navy);
+    border-bottom: 2px solid var(--orange);
+    padding-bottom: 6px;
+    display: inline-block;
+  }
+  h3 { font-size: 17px; margin-top: 22px; color: var(--navy); }
+  p, li { font-size: 16px; color: var(--text); }
+  .muted { color: var(--muted); font-size: 14px; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 18px 0;
+    font-size: 15px;
+  }
+  th, td {
+    padding: 10px 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--line);
+  }
+  th { background: rgba(255, 107, 53, 0.10); color: var(--navy); }
+  .pill {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .ok { background: #e3f7ec; color: #1d7044; }
+  .warn { background: #fff3e0; color: #b25014; }
+  .no { background: #f5f5f7; color: #6e6e73; }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+    padding: 24px;
+  }
+  a { color: var(--orange-dark); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<header>
+  <h1>ConeLog — Privacy Policy</h1>
+  <p>Effective Date: June 8, 2026</p>
+</header>
+
+<main>
+
+<h2>1. Introduction</h2>
+<p>ConeLog ("the App", "we", "us") is a training journal for freestyle slalom skaters. We deeply respect your privacy. This policy explains, in plain language, what data the App handles and what it does not.</p>
+<p><strong>Bottom line:</strong> ConeLog is offline-first. It does not require an account, does not embed any third-party analytics or ad SDK, and never sells or shares your data. Optional features (iCloud sync, weather capture, location capture) are powered exclusively by Apple's first-party frameworks and only activate with your explicit consent.</p>
+
+<h2>2. Information We Do NOT Collect</h2>
+<p>ConeLog does <strong>not</strong> collect, store, or share any of the following:</p>
+<ul>
+  <li>Personal identifiers (name, email, phone, address, account IDs)</li>
+  <li>Advertising identifiers (IDFA, IDFV)</li>
+  <li>Contacts, photos, microphone, camera, or HealthKit data</li>
+  <li>Third-party analytics, crash logs, or behavioral telemetry</li>
+  <li>Any data sent to our own servers — ConeLog has no backend</li>
+</ul>
+
+<h2>3. Data Stored on Your Device</h2>
+<p>The following data is stored <strong>locally</strong> on your device using Apple's Core Data framework:</p>
+<ul>
+  <li><strong>Trick library</strong> — 100+ preset tricks plus any custom tricks you create</li>
+  <li><strong>Session logs</strong> — date, duration, tricks performed, reps, mood, optional notes</li>
+  <li><strong>Environment snapshots (optional)</strong> — weather summary, temperature and approximate location, only when you explicitly enable "auto-capture"</li>
+  <li><strong>App preferences</strong> — language override, theme, units, default workout settings</li>
+  <li><strong>Subscription state</strong> — Pro entitlement flag, validated locally via StoreKit 2 receipts</li>
+</ul>
+
+<h2>4. iCloud Sync (Pro Only — Optional)</h2>
+<p>If you subscribe to <strong>ConeLog Pro</strong> and enable iCloud sync in Settings, your trick library and session logs are synchronized across your own Apple devices using Apple's <strong>CloudKit</strong> framework (private database scope).</p>
+<ul>
+  <li>Data is end-to-end encrypted by iCloud and stored only in <em>your</em> personal iCloud account.</li>
+  <li>The developer of ConeLog has <strong>no access</strong> to the contents of your CloudKit data.</li>
+  <li>You can disable iCloud sync at any time; existing data on the device is preserved.</li>
+  <li>Free-tier users never use CloudKit — no data leaves the device.</li>
+</ul>
+
+<h2>5. Permissions</h2>
+<p>ConeLog requests system permissions only when you enable optional features. All permissions are opt-in and can be revoked at any time in iOS <em>Settings → Privacy</em>.</p>
+<table>
+  <thead><tr><th>Permission</th><th>Status</th><th>Why</th></tr></thead>
+  <tbody>
+    <tr><td>Location (When-In-Use)</td><td><span class="pill warn">Optional</span></td><td>Tag a session with the rink/park name. Coordinates are stored locally only and never transmitted.</td></tr>
+    <tr><td>WeatherKit</td><td><span class="pill warn">Optional</span></td><td>Auto-capture weather and temperature for outdoor sessions. Provided by Apple; the developer never sees the result.</td></tr>
+    <tr><td>Camera / Photo Library</td><td><span class="pill no">Not Used</span></td><td>—</td></tr>
+    <tr><td>Microphone</td><td><span class="pill no">Not Used</span></td><td>—</td></tr>
+    <tr><td>Contacts / Calendar</td><td><span class="pill no">Not Used</span></td><td>—</td></tr>
+    <tr><td>Notifications</td><td><span class="pill no">Not Used</span></td><td>—</td></tr>
+    <tr><td>Bluetooth / Local Network</td><td><span class="pill no">Not Used</span></td><td>—</td></tr>
+  </tbody>
+</table>
+
+<h2>6. Third-Party Services</h2>
+<p>ConeLog integrates with Apple's first-party frameworks only. <strong>No third-party SDKs, no analytics platforms, no advertising networks.</strong></p>
+<ul>
+  <li><strong>Apple StoreKit 2</strong> — handles in-app purchases (monthly &amp; yearly Pro subscriptions). Apple's own privacy practices apply.</li>
+  <li><strong>Apple WeatherKit</strong> — provides weather data when you enable environment auto-capture.</li>
+  <li><strong>Apple CloudKit</strong> — powers iCloud sync for Pro users (private database).</li>
+</ul>
+
+<h2>7. In-App Purchases</h2>
+<p>ConeLog Pro is offered as auto-renewing subscriptions (monthly / yearly). Purchases are processed entirely by Apple. We do not see your payment information; we only receive a verified entitlement token via StoreKit 2 to unlock Pro features locally.</p>
+
+<h2>8. Data Security</h2>
+<p>Because all primary data is stored locally on your device, it is protected by iOS device-level encryption when your device is locked with a passcode, Face ID, or Touch ID. Pro iCloud sync is protected by Apple's CloudKit encryption.</p>
+
+<h2>9. Data Deletion</h2>
+<p>You can delete ConeLog data at any time:</p>
+<ul>
+  <li><strong>Inside the App:</strong> open <em>Settings → Data Management</em> to clear sessions, tricks, or reset to defaults.</li>
+  <li><strong>iCloud (Pro):</strong> <em>Settings → iCloud Sync → Disable</em> stops sync; <em>Settings → Apple ID → iCloud → Manage Storage → ConeLog</em> permanently removes server-side copies.</li>
+  <li><strong>System-wide:</strong> uninstall the App. iOS will remove all local data associated with ConeLog.</li>
+</ul>
+
+<h2>10. Children's Privacy</h2>
+<p>ConeLog is rated 4+ and is suitable for general audiences. The App does not knowingly collect any personal data from anyone, including children under 13. Because no personal data is collected, this policy applies uniformly to all users.</p>
+
+<h2>11. Changes to This Policy</h2>
+<p>We may update this policy if the App's behavior changes. When that happens, the "Effective Date" above will be updated and a summary of changes will appear in the App Store release notes.</p>
+
+<h2>12. Contact Us</h2>
+<p>If you have any questions about this Privacy Policy, please contact:</p>
+<p><a href="mailto:adler0518@163.com">adler0518@163.com</a></p>
+
+<h2>13. Apple App Privacy Labels</h2>
+<p>For the App Store privacy questionnaire, ConeLog declares:</p>
+<table>
+  <thead>
+    <tr><th>Category</th><th>Status</th><th>Notes</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Data Used to Track You</td><td><span class="pill no">None</span></td><td>No tracking SDKs, no IDFA.</td></tr>
+    <tr><td>Data Linked to You</td><td><span class="pill no">None</span></td><td>No account, no identifiers.</td></tr>
+    <tr><td>Data Not Linked to You</td><td><span class="pill no">None</span></td><td>No analytics, no crash reporting.</td></tr>
+    <tr><td>Contact Info</td><td><span class="pill no">Not Collected</span></td><td>—</td></tr>
+    <tr><td>Health &amp; Fitness</td><td><span class="pill no">Not Collected</span></td><td>Sessions stay on device / private iCloud.</td></tr>
+    <tr><td>Financial Info</td><td><span class="pill no">Not Collected</span></td><td>Payments handled by Apple.</td></tr>
+    <tr><td>Location</td><td><span class="pill ok">On-Device Only</span></td><td>Optional rink tag, never transmitted.</td></tr>
+    <tr><td>Sensitive Info</td><td><span class="pill no">Not Collected</span></td><td>—</td></tr>
+    <tr><td>Contacts</td><td><span class="pill no">Not Collected</span></td><td>—</td></tr>
+    <tr><td>User Content</td><td><span class="pill ok">On-Device + Private iCloud (Pro)</span></td><td>Tricks &amp; sessions stay in your iCloud private DB.</td></tr>
+    <tr><td>Browsing / Search History</td><td><span class="pill no">Not Collected</span></td><td>—</td></tr>
+    <tr><td>Identifiers</td><td><span class="pill no">Not Collected</span></td><td>—</td></tr>
+    <tr><td>Purchases</td><td><span class="pill no">Not Collected</span></td><td>Receipt validated locally via StoreKit 2.</td></tr>
+    <tr><td>Usage Data</td><td><span class="pill no">Not Collected</span></td><td>—</td></tr>
+    <tr><td>Diagnostics</td><td><span class="pill no">Not Collected</span></td><td>—</td></tr>
+  </tbody>
+</table>
+
+<p class="muted">By using ConeLog, you acknowledge that you have read and understood this Privacy Policy.</p>
+
+</main>
+
+<footer>© 2026 ConeLog. All rights reserved.</footer>
+
+</body>
+</html>
